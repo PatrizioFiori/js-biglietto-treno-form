@@ -10,14 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     
-
+<!-- <h2> Attenzione ! <br> Gli orari potrebbero variare a causa dello sciopero </h2> -->
 
 </head>
 <body class="bg-danger">
 
-
-    <div class="container mt-5 w-75">
+    <div class="container mt-5 w-100">
         <div class="text-white text-center mb-3 text-uppercase"> <h2> CALCOLA IL PREZZO DEL TUO BIGLIETTO </h2> </div>
+        <h2 id="sciopero" class="bg-warning text-black text-center mb-3 text-uppercase"></h2>
         <div class="row rounded text-center d-flex justify-content-center gap-5 bg-white pb-5 pt-3">
             <div class="col-3 text-center">
                 <label for="nome" class="form-label text-danger">Nome Cognome</label>
@@ -25,7 +25,7 @@
             </div>
             <div class="col-3">
                 <label for="km" class="form-label text-danger">km da percorrere</label>
-                    <input type="text" id="nome" class="form-control border-danger text-center" placeholder="Quanti km devi percorrere ?">
+                    <input type="text" id="km" class="form-control border-danger text-center" placeholder="Quanti km devi percorrere ?">
             </div>
             <div class="col-md-2">
                 <label for="eta" class="form-label text-danger">Fascia d'età</label>
@@ -46,18 +46,18 @@
         <div class="row border pt-3 bg-white">
             <div class="col">
                 <p style="font-weight: bold;">DETTAGLIO PASSEGGERI</p>
-                <table class="table table-bordered text-center bg-white">
+                <table class="table table-bordered bg-white">
                     <thead class="table-danger text-white">
                         <tr>
-                            <th class="bg-secondary">Nome Passeggero</th>
+                            <th class="bg-secondary text-uppercase">Nome Passeggero</th>
                             <th>Offerta</th>
                             <th>Carrozza</th>
                             <th>Codice CP</th>
                             <th>Costo biglietto</th>
                         </tr>
                     </thead>
-                    <tbody id="ticket-details">
-                        <!-- Dettagli del biglietto generati dinamicamente -->
+                    <tbody id="dettagli-biglietto">
+                        <!-- Dettagli del biglietto generati da js-->
                     </tbody>
                 </table>
             </div>
