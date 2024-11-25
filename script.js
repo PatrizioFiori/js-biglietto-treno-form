@@ -27,7 +27,7 @@ document.getElementById("genera").addEventListener("click", function () {
 
     const prezzoFinale = (prezzoTotale * (1 - sconto)).toFixed(2);
 
-    // Generazione random di carrozza e codiceCP
+    // Generazione random di carrozza, codiceCP e sciopero
     const carrozza = Math.floor(Math.random() * 10) + 1;
     const codiceCP = Math.floor(10000 + Math.random() * 90000);
     const sciopero = Math.floor(Math.random() * 10) + 1;
