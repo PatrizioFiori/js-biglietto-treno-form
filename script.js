@@ -31,10 +31,10 @@ document.getElementById("genera").addEventListener("click", function () {
     const carrozza = Math.floor(Math.random() * 10) + 1;
     const codiceCP = Math.floor(10000 + Math.random() * 90000);
     const sciopero = Math.floor(Math.random() * 10) + 1;
-    alert (sciopero)
-
+    
     if (sciopero >= 8){
         document.getElementById("sciopero").innerHTML = "Attenzione ! <br> Sciopero in corso. Gli orari potrebbero variare"
+        alert ("Sciopero in corso")
     } else {
         document.getElementById("sciopero").innerHTML = ""
 

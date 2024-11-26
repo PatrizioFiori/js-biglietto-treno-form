@@ -15,6 +15,40 @@
 <main>
 <body class="bg-danger">
 
+
+    <nav class="navbar navbar-expand-lg bg-danger navbar-dark border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="#">
+                <i class="fa-solid fa-train"></i> Biglietti Treno
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tariffe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatti</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Altro
+                        </a>
+                        <ul class="dropdown-menu bg-danger text-white border-0">
+                            <li><a class="dropdown-item text-white" href="#">Termini e Condizioni</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Privacy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container mt-5 w-100">
         <div class="text-white text-center mb-3 text-uppercase"> <h2> CALCOLA IL PREZZO DEL TUO BIGLIETTO </h2> </div>
         <h2 id="sciopero" class="bg-warning text-black text-center mb-3 text-uppercase"></h2>
@@ -43,7 +77,7 @@
     
     <div class="">
         <div class="text-white text-center mt-3 text-uppercase"> <h4> Il tuo biglietto </h4> </div>
-        <div class="row border pt-3 bg-white">
+        <div class="row rounded border pt-3 bg-white">
             <div class="col">
                 <p style="font-weight: bold;">DETTAGLIO PASSEGGERI</p>
                 <table class="table table-bordered bg-white">
@@ -65,6 +99,7 @@
     </div>
     </div>
 </main>
+
 
 <script src="./script.js"></script>
 </body>
